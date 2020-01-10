@@ -1,0 +1,13 @@
+version: '3'
+services:
+  tensorflow:
+    image: navysu/tensorflow-notebook
+    ports:
+      - "8900:8888"
+    restart:
+      always
+    volumes:
+      - ./notebooks:/home/jovyan/mybooks
+
+
+
