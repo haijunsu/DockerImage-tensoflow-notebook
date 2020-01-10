@@ -7,7 +7,11 @@ services:
     restart:
       always
     volumes:
-      - ./notebooks:/home/jovyan/mybooks
+      # notebook for work
+      - ./notebooks/work:/home/jovyan/work
+      # notebook for myown
+      - ./notebooks/mybooks:/home/jovyan/mybooks
+
 
 
 
