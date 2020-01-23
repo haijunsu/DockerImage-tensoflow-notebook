@@ -5,7 +5,8 @@ LABEL maintainer="Haijun (Navy) Su <navysu@gmail.com>"
 
 # Install dependencies
 RUN pip install \
-    'openpyxl==3.0.3' autopep8 isort & \
+    'openpyxl==3.0.3' autopep8 isort yapf gspread df2gspread \
+    google-api-python-client==1.6.7 google-auth-httplib2 google-auth-oauthlib & \
     conda install -c conda-forge jupyter_contrib_nbextensions
 
 RUN jupyter contrib nbextension install --user &\

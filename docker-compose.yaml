@@ -11,6 +11,8 @@ services:
       - ./notebooks/work:/home/jovyan/work
       # notebook for myown
       - ./notebooks/mybooks:/home/jovyan/mybooks
+      # google api tokens
+      - ./google:/google
 
 
 
